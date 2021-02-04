@@ -21,7 +21,8 @@ class Song
   def self.new_by_filename(name)
     artist_name = name.split(" - ")[0]
     song_name = name.split(" - ")[1]
-    Artist.find_or_create_by_name
+    Artist.find_or_create_by_name(artist_name)
+    Song.new(song_name)
   end
   
 end
