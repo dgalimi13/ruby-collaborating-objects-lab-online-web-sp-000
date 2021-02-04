@@ -1,5 +1,3 @@
-
-
 class MP3Importer
   attr_accessor :path, :size, 
   
@@ -19,6 +17,5 @@ end
 end
 
 def import
-  binding.pry
-files.new_by_filename
+ 
 end
