@@ -16,7 +16,8 @@ end
 
 
 def import
-  
+   binding.pry
+files.new_by_filename
 end
  
 end
