@@ -25,6 +25,7 @@ class Song
     new_song = Song.new(song_name)
     binding.pry
     new_song.artist = new_artist
+    new_song
   end
   
 end
