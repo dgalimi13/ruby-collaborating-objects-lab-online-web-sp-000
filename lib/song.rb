@@ -5,7 +5,8 @@ class Song
   @@songs = []
   
   def artist_name=(artist)
-    
+    new_artist = artist.find_or_create_by_name
+    self.artist = new_artist
   end
   
   def initialize(name)
