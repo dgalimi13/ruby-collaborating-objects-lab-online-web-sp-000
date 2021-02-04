@@ -11,7 +11,9 @@ end
 
 def import
 binding.pry
-files.new_by_filename
+files.each do |name| 
+  # name.new_by_filename
+end
 end
  
 end
