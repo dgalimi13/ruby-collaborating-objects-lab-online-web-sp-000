@@ -12,7 +12,7 @@ end
 def import
 # binding.pry
 files.each do |name| 
-Song.new_by_filename
+Song.new_by_filename(name)
 end
 end
  
