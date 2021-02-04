@@ -10,11 +10,6 @@ def files
   @files ||= Dir.glob("#{path}/*.mp3").collect { |f| f.gsub("#{path}/", "" ) }
 end
 
-def size
-  
-end 
-
-
 def import
 files.new_by_filename
 end
