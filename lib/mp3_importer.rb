@@ -10,7 +10,7 @@ def files
 end
 
 def import
-binding.pry
+# binding.pry
 files.each do |name| 
   # name.new_by_filename
 end
