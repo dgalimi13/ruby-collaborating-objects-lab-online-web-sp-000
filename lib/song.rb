@@ -18,4 +18,8 @@ class Song
   @@all 
   end
   
+  def self.new_by_filename(name)
+    binding.pry
+  end
+  
 end
