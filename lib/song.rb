@@ -4,6 +4,8 @@ class Song
   @@all = []
   @@songs = []
   
+  
+  
   def initialize(name)
     @name = name
     @@songs << self
