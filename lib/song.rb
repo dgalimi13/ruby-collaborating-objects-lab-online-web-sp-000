@@ -5,8 +5,12 @@ class Song
   @@songs = []
   
   def artist_name=(artist)
-    found_artist = Artist.new = self.all.find 
-    
+    found_artist = self.all.find {|artist| name == artist.name}
+    if found_artist
+    return found_artist
+  else
+    name = Artist.new(name) 
+  end
   end
   
   def initialize(name)
