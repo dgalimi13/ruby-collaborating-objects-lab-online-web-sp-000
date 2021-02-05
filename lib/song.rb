@@ -8,8 +8,6 @@ class Song
     new_artist = Artist.find_or_create_by_name(artist)
   end
   
-  end
-  
   def initialize(name)
     @name = name
     @@songs << self
