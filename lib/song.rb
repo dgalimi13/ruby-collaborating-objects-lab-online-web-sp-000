@@ -9,7 +9,7 @@ class Song
     if found_artist
     return found_artist
   else
-    name = Artist.new(name) 
+    name = Artist.new(artist) 
   end
   end
   
