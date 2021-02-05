@@ -11,6 +11,7 @@ class Song
   else
     name = Artist.new(artist) 
   end
+  
   end
   
   def initialize(name)
@@ -32,7 +33,6 @@ class Song
     song_name = name.split(" - ")[1]
     new_artist = Artist.find_or_create_by_name(artist_name)
     new_song = Song.new(song_name)
-    # binding.pry
     new_song.artist = new_artist
     new_song
   end
