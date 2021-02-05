@@ -5,11 +5,7 @@ class Song
   @@songs = []
   
   def artist_name=(artist)
-    found_artist = Song.all.find {|artist| name == artist.name}
-    if found_artist
-    return found_artist
-  else
-    name = Artist.new(name) 
+    
   end
   
   end
